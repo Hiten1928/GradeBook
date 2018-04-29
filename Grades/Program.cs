@@ -15,7 +15,7 @@ namespace Grades
             SpeechSynthesizer speak = new SpeechSynthesizer();
             speak.Speak("You are welcome to the program that calculates Grades. This program is built in C# language and on .NET platform. Hope you have a great experience.");
 
-             GradeBook book = new GradeBook();
+            GradeBook book = new GradeBook();
 
             book.AddGrade(75);
             book.AddGrade(82.5f);
