@@ -15,6 +15,26 @@ namespace Grades.Test.Types
         }
 
         [TestMethod]
+        public void StringCompare()
+        {
+            string var1 = "Hiten";
+            string var2 = "hiten";
+
+            bool result = String.Equals(var1, var2, StringComparison.InvariantCultureIgnoreCase);
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void ValueTypesTest()
+        {
+            int x1 = 100;
+            int x2 = x1;
+
+            x1 = 4;
+            
+        }
+
+        [TestMethod]
         public void VariablesHoldReferences()
         {
             GradeBook g1 = new GradeBook();
