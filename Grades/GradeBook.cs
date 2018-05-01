@@ -13,8 +13,9 @@ namespace Grades
 
         public GradeBook()
         {
-         grades = new List<float>();
+            grades = new List<float>();
         }
+    
 
         public GradeStatistics ComputeStatistics()
         {
@@ -34,7 +35,20 @@ namespace Grades
 
             stats.Average = sum / grades.Count;
 
+            //switch(choice)
+            //{
+
+            //    case 1:
+            //        return stats.Maximum;
+            //    case 2:
+            //        return stats.Minimum;
+            //    default:
+            //        return stats.Average;
+
             return stats;
+
+
+    
         }
 
         public  void AddGrade(float grade)
@@ -42,8 +56,9 @@ namespace Grades
             grades.Add(grade);
         }
 
-        
+
         List<float> grades;
 
     }
 }
+

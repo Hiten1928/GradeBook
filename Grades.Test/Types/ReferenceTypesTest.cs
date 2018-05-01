@@ -8,10 +8,29 @@ using System.Threading.Tasks;
 namespace Grades.Test.Types
 {
     [TestClass]
-   public class ReferenceTypesTest
+    public class TypesTest
     {
-        public ReferenceTypesTest()
+        public TypesTest()
         {
+        }
+
+        [TestMethod]
+        public void ReferenceValueTest()
+        {
+            GradeBook book1 = new GradeBook();
+            GradeBook book2 = book1;
+           
+
+            BookName(book1);
+
+            Assert.AreEqual("Concept of Physics", book2.Name);
+
+        }
+
+        private void BookName(GradeBook book)
+        {
+            book.Name = "Concept of Physics";
+         
         }
 
         [TestMethod]
